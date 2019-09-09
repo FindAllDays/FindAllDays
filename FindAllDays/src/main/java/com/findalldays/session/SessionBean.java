@@ -23,6 +23,8 @@ public class SessionBean implements Serializable {
 	
 
 	private String sessionId;
+	//Test
+	
 	
 	@PostConstruct
 	public void keepSessionAlive() {
