@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	template="/templates/template.xhtml">
+	<ui:define name="contentMain">
+
+		<h:head>
+
+		</h:head>
+		<h:body>
+
+			<div id="page-content" class="header-static footer-fixed">
+                <!--  Slider  -->
+                <div id="flexslider" class="fullpage-wrap small extrasmall">
+                    <ul class="slides">
+                        <li style="background-image:url(assets/img/contact.jpg)">
+                            <div class="text text-center">
+                                <h1 class="white margin-bottom-small">Contact</h1>
+                                <p class="heading white">ติดต่อสอบถามข้อมูลเพิ่มเติม เกี่ยวกับสินค้าและบริการ</p>
+                            </div>
+                            <div class="gradient dark"></div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!--  END Slider  -->
+                <div id="home-wrap" class="content-section fullpage-wrap">
+					<ui:include src="/includes/support.xhtml" />
+                    <!-- Services -->
+                    <div class="row no-margin grey-background">
+                        <div class="col-md-12 padding-leftright-null">
+                            <div class="col-md-4 padding-leftright-null">
+                                <div class="text padding-md-bottom-null">
+                                    <i class="icon ion-ios-location-outline service material left"></i>
+                                    <div class="service-content">
+                                        <h6 class="heading  margin-bottom-extrasmall">บริษัท ไอ เฟิร์สเทค จำกัด</h6>
+                                        <p class="margin-bottom-null">40/32 โครงการแอทโฮม-รามอินทรา ซ.คู้บอน13 ถนนคู้บอน แขวงรามอินทรา<br></br>
+                                            เขตคันนายาว กรุงเทพมหานคร 10230 </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 padding-leftright-null">
+                                <div class="text padding-md-bottom-null">
+                                    <i class="icon ion-ios-telephone-outline service material left"></i>
+                                    <div class="service-content">
+                                        <h6 class="heading grey margin-bottom-extrasmall">ติดต่อสอบถามข้อมูล</h6>
+                                        <p class="margin-bottom-null"><a href="">089-894-6692</a><br></br><a href="">064-969-9563</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 padding-leftright-null">
+                                <div class="text">
+                                    <i class="icon ion-ios-world-outline service material left"></i>
+                                    <div class="service-content">
+                                        <h6 class="heading margin-bottom-extrasmall">E-mail</h6>
+                                        <p class="margin-bottom-null"><a href="">support@i-mywork.com</a><br></br>email contact</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END Services -->
+                    <div class="row margin-leftright-null">
+                        <div class="col-md-6 padding-leftright-null">
+                            <div class="text">
+                                <h2 class="margin-bottom-null title left">Get in touch</h2>
+                                <div class="padding-onlytop-md">
+                                    <h3 class="grey big margin-bottom-small">i-MyWork</h3>
+                                    <p class="heading left margin-bottom">ติดต่อสอบถามข้อมูลเพิ่มเติม เกี่ยวกับสินค้าและบริการ หรือแจ้งปัญหาการใช้บริการของเรา หรือต้องการสอบถามเรื่อง อื่นๆ ได้ ที่นี่</p>
+                                    <p><span class="contact-info">ที่อยู่ <em>40/32 โครงการแอทโฮม-รามอินทรา ซ.คู้บอน13 ถนนคู้บอน แขวงรามอินทรา เขตคันนายาว กรุงเทพมหานคร 10230 </em></span><br></br><span class="contact-info">โทรศัพท์ <em> 089-894-6692</em></span><br></br><span class="contact-info">E-Mail <a href="#"><em>support@i-mywork.com</em></a></span></p>
+                                    <p><span class="contact-info">วันจันทร์-ศุกร์ <em>08.30 - 24.00</em></span><br></br><span class="contact-info">วันเสาร์ <em>08.30 - 24.00</em></span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 padding-leftright-null">
+                            <div class="text padding-md-top-null">
+                                <form id="contact-form" class="padding-md padding-md-topbottom-null">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <input class="form-field" name="name" id="name" type="text" placeholder="Name"/>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <input class="form-field" name="mail" id="mail" type="text" placeholder="Email"/>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <input class="form-field" name="subjectForm" id="subjectForm" type="text" placeholder="Subject"/>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <textarea class="form-field" name="messageForm" id="messageForm" rows="6" placeholder="Your Message"></textarea>
+                                            <div class="submit-area padding-onlytop-sm">
+                                                <input type="submit" id="submit-contact" class="btn-alt active shadow" value="Send Message"/>
+                                                <div id="msg" class="message"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+			
+		</h:body>
+
+	</ui:define>
+</ui:composition>
+

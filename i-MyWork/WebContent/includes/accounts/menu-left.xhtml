@@ -1,0 +1,44 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich">
+<h:head>
+
+</h:head>
+<h:body>
+	<div class="be-left-sidebar">
+        <div class="left-sidebar-wrapper"><a href="#" class="left-sidebar-toggle">E-Docs. Menu</a>
+          <div class="left-sidebar-spacer">
+            <div class="left-sidebar-scroll">
+              <div class="left-sidebar-content">
+                <ul class="sidebar-elements">
+                  <li class="divider">เมนูหลัก</li>
+                  <li class="#{view.viewId eq '/accounts/index.xhtml' ? 'active' : ''}"><a href="index.jsf"><i class="icon mdi mdi-home"></i><span>หน้าแรก</span></a>
+                  </li>
+                  
+                  
+                  <li class="divider">สินค้าและบริการ</li>
+                  <li class="parent"><a href="#"><i class="icon mdi mdi-layers"></i><span>จัดการสินค้าและบริการ</span></a>
+                    <ul class="sub-menu">
+                      <li><a href="">สินค้าและบริการของคุณ</a>
+                      </li>
+                     
+                    </ul>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="progress-widget">
+            <div class="progress-data"><span class="progress-value">60%</span><span class="name">Current Project</span></div>
+            <div class="progress">
+              <div style="width: 60%;" class="progress-bar progress-bar-primary"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+</h:body>
+</ui:composition>

@@ -1,0 +1,43 @@
+<!--
+    i-firsttech Co.,ltd.
+-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich" >
+<h:head>
+	<title>e-Document</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta charset="UTF-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"/>
+ 	<link rel="stylesheet" type="text/css" href="#{request.contextPath}/resources/account/lib/perfect-scrollbar/css/perfect-scrollbar.min.css"/>
+    <link rel="stylesheet" type="text/css" href="#{request.contextPath}/resources/account/lib/material-design-icons/css/material-design-iconic-font.min.css"/>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <link rel="stylesheet" href="#{request.contextPath}/resources/account/css/style.css" type="text/css"/>
+	<link rel="stylesheet" href="#{request.contextPath}/resources/account/css/richface-custom.css" type="text/css"/>
+   	<link rel="stylesheet" href="#{request.contextPath}/resources/account/css/richface-custom.css" type="text/css"/>
+</h:head>
+<h:body styleClass="login-page authentication">
+	
+
+		<ui:insert name="content">
+             [Template content will be inserted here]
+        </ui:insert>
+        <a4j:status name="waitLargeStatus"
+			onstart="#{rich:component('popupStatus')}.show()"
+			onsuccess="#{rich:component('popupStatus')}.hide()">
+		</a4j:status>
+		<rich:popupPanel id="popupStatus" modal="true" autosized="true"
+			resizeable="false" style="background: transparent;border:0px;">
+			<img src="#{request.contextPath}/resources/img/loader.gif" alt="" />
+		</rich:popupPanel>
+		
+
+	
+</h:body>
+</html>

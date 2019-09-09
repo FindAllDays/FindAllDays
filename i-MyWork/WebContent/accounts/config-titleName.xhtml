@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich" template="/templates/template-account.xhtml">
+
+
+	<ui:define name="content">
+		<div class="be-content">
+		<div class="page-head">
+          <h2 class="page-head-title">จัดการข้อมูลคำนำหน้า</h2>
+          <ol class="breadcrumb page-head-nav">
+            <li><a href="#">หน้าแรก</a></li>
+            <li class="active">จัดการข้อมูลคำนำหน้า</li>
+          </ol>
+        </div>
+			<div class="main-content container-fluid">
+				<div class="row">
+					<div class="col-xs-12 col-md-6 col-lg-6">
+						<div
+							class="panel panel-default panel-border-color panel-border-color-primary">
+							<div class="panel-heading panel-heading-divider">
+								คำนำหน้า<span class="panel-subtitle">จัดการข้อมูลคำนำหน้า</span>
+							</div>
+							<div class="panel-body">
+								<h:form id="form-new">
+									<div class="form-group xs-pt-10">
+										<label>รหัสคำนำหน้า</label> 
+										<h:inputText label="TitleNameCode" id="TitleNameCode"
+											disabled="#{titleNameBean.disabledInputTextTitleNameCode}"
+											value="#{titleNameBean.inputTitleNameCode}" required="true"
+											styleClass="form-control" 
+											a:placeholder="รหัสคำนำหน้า" 
+											requiredMessage="* กรุณาใส่รหัสคำนำหน้า">
+											<f:ajax event="keyup"  />
+										</h:inputText>
+										<rich:message for="TitleNameCode" ajaxRendered="true" showSummary="false" />
+									</div>
+									<div class="form-group">
+										<label>ชื่อคำนำหน้า</label> 
+										<h:inputText label="TitleName" id="TitleName"
+											disabled="#{titleNameBean.disabledInputTextTitleName}"
+											value="#{titleNameBean.inputTitleName}" required="true"
+											styleClass="form-control" 
+											a:placeholder="ชื่อคำนำหน้า" 
+											requiredMessage="* กรุณาใส่ชื่อคำนำหน้า">
+											<f:ajax event="keyup"  />
+										</h:inputText>
+										<rich:message for="TitleName" ajaxRendered="true" showSummary="false" />
+									</div>
+									<div class="row xs-pt-15">
+
+										<div class="col-xs-12">
+											<p class="text-right">
+											
+											<rich:notifyMessage stayTime="3000" nonblocking="true"/>
+											<a4j:commandLink styleClass="btn btn-space btn-default"
+													disabled="#{titleNameBean.btNew}"
+													action="#{titleNameBean.actionNew}"
+													status="waitLargeStatus" render="form-new,form-data">
+													<i class="icon icon-left mdi mdi-plus-circle-o"></i>
+													<h:outputText value="&#160;" />เพิ่มข้อมูล
+											</a4j:commandLink>
+											<a4j:commandLink styleClass="btn btn-space btn-primary"
+													disabled="#{titleNameBean.btSave}"
+													action="#{titleNameBean.actionSave}"
+													status="waitLargeStatus" render="form-new,form-data">
+													<i class="icon icon-left mdi mdi-floppy"></i>
+												<h:outputText value="&#160;" />บันทึกข้อมูล
+											</a4j:commandLink>
+											<a4j:commandLink styleClass="btn btn-space btn-danger" execute="@this"
+													disabled="#{titleNameBean.btReset}"
+													action="#{titleNameBean.ClearData}"
+													status="waitLargeStatus" render="form-new">
+													<i class="icon icon-left mdi mdi-refresh"></i>
+												<h:outputText value="&#160;" />ล้างข้อมูล
+											</a4j:commandLink>
+									
+											</p>
+										</div>
+									</div>
+								</h:form>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-6 col-lg-6">
+						<div class="panel panel-default panel-table">
+							<div class="panel-heading">ข้อมูลคำนำหน้าทั้งหมด</div>
+							<div class="panel-body">
+							<h:form id="form-data">
+								<table class="table table-striped table-borderless">
+									<thead>
+										<tr>
+											<th style="width: 30%;text-align: center;">รหัสคำนำหน้า</th>
+											<th>ชื่อคำนำหน้า</th>
+											<th class="actions"></th>
+										</tr>
+									</thead>
+									<tbody class="no-border-x">
+									
+										<a4j:repeat value="#{titleNameBean.listTitleName}" var="list"
+											id="dataList" rows="5">
+
+											<tr>
+												<td align="center">#{list.titleNameCode}</td>
+												<td>#{list.titleName}</td>
+												<td class="actions"><a href="#" class="icon"><i
+														class="mdi mdi-edit"></i></a>
+														<a href="#" class="icon"><i
+														class="mdi mdi-delete"></i></a></td>
+											</tr>
+										</a4j:repeat>
+										
+									
+									</tbody>
+								</table>
+									<a4j:outputPanel layout="block" styleClass="pagination">
+						                <rich:dataScroller for="dataList" render="form-data" fastStep="1" maxPages="5">
+						                  <f:facet name="first">
+						                    <h:outputText value="First"/>
+						          		  </f:facet>
+								          <f:facet name="last">
+								                    <h:outputText value="Last"/>
+								          </f:facet>
+						                </rich:dataScroller>
+						            </a4j:outputPanel>
+            	</h:form>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</ui:define>
+
+</ui:composition>
+

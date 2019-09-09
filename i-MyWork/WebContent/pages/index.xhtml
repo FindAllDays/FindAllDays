@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	template="/templates/template.xhtml">
+	<ui:define name="contentMain">
+
+		<h:head>
+
+		</h:head>
+		<h:body>
+
+			<!--  Page Content, class footer-fixed if footer is fixed  -->
+			<div id="page-content" class="header-static footer-fixed">
+				<!--  Slider  -->
+				<div id="flexslider" class="fullpage-wrap small">
+					<ul class="slides">
+						<li style="background-image: url(assets/img/service1.jpg)">
+							<div class="text left typed">
+								<h2 class="title white left margin-bottom">i-FirstTech</h2>
+								<h1 class="medium white ">We are i-MyWork</h1>
+								<p>
+									<span id="typed" class="big white"
+										data-typed-first="a Service Slip Online"
+										data-typed-second="business solution support"></span>
+								</p>
+								<p class="heading white left margin-bottom">โปรแกรม Slip Online ที่ให้คุณบริหารจัดการธุรกิจของคุณอย่างมีประสิทธิภาพด้วยการเชื่อมต่อกับแพลต Cloud Services Platform</p>
+								<a href="register.jsf" class="btn-alt small active margin-null">สมัครใช้บริการ ฟรี!</a>
+							</div>
+							<div class="gradient dark"></div>
+						</li>
+					</ul>
+				</div>
+				<!--  END Slider  -->
+				<div id="home-wrap" class="content-section fullpage-wrap">
+					<ui:include src="/includes/support.xhtml" />
+					<!-- Services -->
+					<div class="row no-margin">
+						<div class="col-md-12 padding-leftright-null">
+							<div class="col-md-4 padding-leftright-null">
+								<div class="text padding-md-bottom-null">
+									<i class="icon ion-ios-analytics-outline service material left"></i>
+									<div class="service-content">
+										<h6 class="heading  margin-bottom-extrasmall">Register</h6>
+										<p class="margin-bottom-null">ลงทะเบียนสมัครใช้บริการหรือเลือกสินค้าที่คุณต้องการ </p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 padding-leftright-null">
+								<div class="text padding-md-bottom-null">
+									<i
+										class="icon ion-ios-color-filter-outline service material left"></i>
+									<div class="service-content">
+										<h6 class="heading grey margin-bottom-extrasmall">Management</h6>
+										<p class="margin-bottom-null">ลงชื่อเข้าใช้งาน เพื่อบริหารจัดการข้อมูลของบริการหรือสินค้าของคุณ</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 padding-leftright-null">
+								<div class="text">
+									<i class="icon ion-ios-lightbulb-outline service material left"></i>
+									<div class="service-content">
+										<h6 class="heading  margin-bottom-extrasmall">Publisher</h6>
+										<p class="margin-bottom-null">นำเสนอบริการหรือใช้งานภายในหรือภายนอกองค์กรของคุณ เพื่อธุรกิจของคุณ</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- END Services -->
+					<!-- Section Image Background -->
+					<div class="row margin-leftright-null grey-background">
+						<div class="bg-img overlay transparent responsive"
+							style="background-image: url(assets/img/creative2.jpg)">
+							<div class="col-md-12 padding-leftright-null">
+								<div class="text">
+									<h2 class="margin-bottom-null title left grey">สินค้าและบริการ</h2>
+									<div class="padding-onlytop-md">
+										<h3 class="grey big margin-bottom-small">Slip Online สำหรับธุรกิจของคุณ</h3>
+										<p class="heading left margin-bottom grey">ระบบสลิปออนไลน์ สำหรับองค์กร หน่วยงาน หรือบริษัท ที่ต้องการระบบบริหารจัดการการนำส่งสลิป แก่พนักงาน พร้อมฟังก์ชันการทำงานด้านการเงินอย่างมีประสิทธิภาพ </p>
+										<a href="our-services.jsf" class="btn-alt active shadow small margin-null">รายละเอียดเพิ่มเติม</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- END Section Image Background -->
+					<div class="row fullpage-wrap">
+                        <!-- Video -->
+                        <div class="col-md-6 padding-leftright-null">
+                            <a class="popup-youtube" href="https://www.youtube.com/watch?v=4PFBxfITU_Q">
+                                <div data-responsive="child-height" data-responsive-id="story" class="bg-img" style="height: 435px; background-image: url(&quot;assets/img/service1.jpg&quot;);"></div>
+                            </a>
+                        </div>
+                        <!-- END Video -->
+                        <div class="col-md-6 padding-leftright-null">
+                            <div data-responsive="parent-height" data-responsive-id="story" class="text grey-background">
+                                <h2 class="margin-bottom-null title left grey">เพิ่มเติม</h2>
+                                <div class="padding-onlytop-md">
+                                    <h3 class="grey big margin-bottom-small">สะดวก รวดเร็ว ง่ายต่อการใช้งาน</h3>
+                                    <p class="heading left margin-bottom grey">สามารถเข้าใช้งานได้ทุกที่ทุกเวลา มีระบบจัดการข้อมูลอย่างมีประสิทธิภาพ และรองรับการทำงานบนอุปกรณ์พกพาทุกประเภท</p>
+                                    <a href="our-services.jsf" class="btn-alt active shadow small margin-null">รายละเอียดเพิ่มเติม</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					
+					
+					<!-- END Section Partners -->
+					<div class="row padding-md margin-leftright-null color-background">
+                        <div class="col-md-12 text-center">
+                            <h4 class="big margin-bottom-small white">สมัครทดลองใช้ โปรแกรม Slip Online ฟรี</h4>
+                            <a href="register.jsf"  class="btn-alt small white margin-null active shadow">สมัครใช้บริการ ฟรี !</a>
+                        </div>
+                    </div>
+				</div>
+			</div>
+			<!--  END Page Content, class footer-fixed if footer is fixed  -->
+
+			<!--  Main Wrap  -->
+		</h:body>
+
+	</ui:define>
+</ui:composition>
+

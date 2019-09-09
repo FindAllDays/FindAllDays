@@ -1,0 +1,156 @@
+
+.rf-msg-err, .rf-msgs-err {
+    background-image: none !important;
+    color: #FF0000;
+    margin-top: 10px;
+}
+.rf-msg-err, .rf-msgs-err, .rf-msg-ftl, .rf-msgs-ftl, .rf-msg-inf, .rf-msgs-inf, .rf-msg-wrn, .rf-msgs-wrn, .rf-msg-ok, .rf-msgs-ok {
+    display: block;
+    padding-right: 2px;
+    padding-left: 2px !important;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+.rf-p {
+    background-color: none !important;
+    background: none !important;
+    color: #C4C0B9;
+    border-width: 0px !important;
+    border-style: solid;
+    border-radius: 0px;
+    padding: 0px !important; 
+}
+.rf-dt {
+    background-color: #FFFFFF;
+    border-collapse: collapse;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ddd !important;
+    empty-cells: show;
+}
+.rf-p-b {
+    font-size: 16px;
+    color: #000000;
+    padding: 0px !important;
+}
+.rf-dt-ftr-c {
+   
+    border-bottom-color: #ddd;
+    border-left-color: #ddd;
+    border-right-color: #ddd;
+    color: #000000;
+    background-color: #ddd !important;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 4px;
+    text-align: left;
+}
+ .table-bordered > tfoot > tr > td {
+    border: 0px solid #ddd;
+}
+.table > tfoot > tr > th,  .table > tfoot > tr > td {
+    padding: 10px 0px 0px;
+    line-height: 1.428571429;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+}
+.rf-dt-shdr-c {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #C4C0C9;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: #C4C0C9;
+    background-color: #fff !important;
+    background-image: none !important;
+    color: #939caa ;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 4px;
+    text-align: center;
+}
+.rf-pp-cnt {
+    color: #000000;
+    font-size: 16px;
+    background-color: #fff;
+}
+.rf-pp-cnt-scrlr {
+    top: 0px;
+    left: 0px;
+    overflow: auto;
+    background: transparent !important;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+#popupStatus_shadow{
+	opacity: 0.1;
+left: 5px;
+top: 5px;
+bottom: -5px;
+width: 0px !important;
+height: 120px;
+}
+
+.rf-cal-btn {
+    cursor: pointer;
+    vertical-align: middle;
+    margin-left: 40px;
+}
+.rf-ntf {
+	margin-top:60px;
+}
+.rf-ntf-cnt {
+	padding: 0.8em;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 1px;
+	border-color: #C4C0B9;
+	background-color: #FFFFFF;
+	font-size: 14px;
+	font-weight: bold;
+}
+.rf-ds {
+    white-space: nowrap;
+    display: inline-block;
+    font-size: 11px;
+    padding: 1px;
+   	font-family: THSarabunNew, sans-serif;
+    background: #FFFFFF;
+    margin-left: 10px;
+}
+.rf-ds-btn {
+	position: relative;
+	padding: 10px 12px;
+	line-height: 1.42857143;
+	text-decoration: none;
+	color: #404040;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	background-image:none !important;
+	margin-right: 4px;
+
+}
+.rf-ds-nmb-btn {
+	font-size: 14px;
+	line-height: 14px;
+	font-weight: 400;
+	padding: 10px 0px;
+	color: #404040;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-radius: 2px;
+	margin-left: 4px;
+}
+.rf-ds-act, .rf-ds-act:hover {
+	z-index: 3;
+	color: #fff;
+	background-color: #4285f4;
+	border-color: #4285f4;
+	cursor: default;
+}
+/* .rf-ntf-wrn .rf-ntf-ico {
+    display: block;
+    background-image: url(/e-document/org.richfaces.resources/javax.faces.resource/warning.png?ln=org.richfaces);
+} */
+.rf-ds-btn-next, .rf-ds-btn-fastfwd, .rf-ds-btn-last { margin-left: 4px;}

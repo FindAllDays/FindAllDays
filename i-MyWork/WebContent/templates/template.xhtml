@@ -1,0 +1,49 @@
+<!--
+    i-firsttech Co.,ltd.
+-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich">
+	<h:head>
+		<title>i-myWork:งานของคุณคืองานของเรา</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<ui:include src="/includes/css.xhtml" />
+		<link rel="icon" type="image/x-icon"
+			href="#{request.contextPath}/favicon.jpg" />
+
+	</h:head>
+	<h:body>
+		<!--  loader  -->
+        <div id="myloader">
+            <span class="loader">
+                <img src="assets/img/logo.png" class="normal" alt="logo"/>
+                <img src="assets/img/logo@2x.png" class="retina" alt="logo"/>
+            </span>
+        </div>
+        
+        <!--  Main Wrap  -->
+        <div id="main-wrap">
+		<ui:include src="/includes/header.xhtml" />
+		
+		<!-- Main Content -->
+		<ui:insert name="contentMain">
+             [Template content will be inserted here]
+        </ui:insert>
+		<a4j:status  name="waitLargeStatus" onstart="#{rich:component('popupStatus')}.show()" onsuccess="#{rich:component('popupStatus')}.hide()">
+		</a4j:status>
+		<rich:popupPanel id="popupStatus" modal="true" autosized="true" resizeable="false" 
+		style="background: transparent;border:0px;">
+       		<img src="#{request.contextPath}/resources/web/assets/img/loader.gif" alt="" />
+    	</rich:popupPanel>
+    	<ui:include src="/includes/footer.xhtml" />
+    	</div>
+		
+		<ui:include src="/includes/js.xhtml" />
+
+	</h:body>
+</ui:composition>

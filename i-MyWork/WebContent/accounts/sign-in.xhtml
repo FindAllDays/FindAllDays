@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich" 
+	template="/templates/template-account-login.xhtml">
+
+
+	<ui:define name="content">
+		<div class="be-wrapper be-login">
+      <div class="be-content" style="margin-left: 0px;">
+        <div class="main-content container-fluid">
+          <div class="splash-container">
+            <div class="panel panel-default panel-border-color panel-border-color-primary">
+              <div class="panel-heading" style="margin-bottom: 0px;"><img src="#{request.contextPath}/resources/account/img/logo.png" alt="logo" class="logo-img"/><span class="splash-description">ลงชื่อเข้าใช้งานระบบการจัดาร i-MyWork</span></div>
+              <div class="panel-body">
+                <h:form id="form-sign-in">
+                <rich:validator event="change">
+                  <div class="form-group">
+                    <h:inputText label="Username" id="Username"
+											value="" required="true"
+											styleClass="form-control" 
+											a:placeholder="ชื่อเข้าใช้งานระบบ" 
+											requiredMessage="* กรุณาใส่ชื่อเข้าใช้งานระบบ">
+											<f:ajax event="keyup"  />
+										</h:inputText>
+										<rich:message for="Username" ajaxRendered="true" />
+                  </div>
+                  <div class="form-group">
+                    <h:inputSecret label="password" id="password" 
+											value="" required="true"
+											styleClass="form-control"
+											a:placeholder="รหัสผ่าน" 
+											 requiredMessage="* กรุณาใส่รหัสผ่าน">
+										</h:inputSecret>
+										<rich:message for="password" ajaxRendered="true"/>
+                  </div>
+                  </rich:validator>
+                  <div class="form-group login-submit">
+                  <rich:notifyMessage stayTime="3000" nonblocking="true"/>
+                  <a4j:commandLink styleClass="btn btn-primary btn-xl" id="BTSignIn"
+													status="waitLargeStatus" render="form-sign-in">
+													<i class="icon mdi mdi-lock"></i>
+												<h:outputText value="&#160;" />ลงชื่อเข้าใช้งาน
+											</a4j:commandLink>
+                   </div>
+                </h:form>
+              </div>
+            </div>
+            <div class="splash-footer"><span>ระบบการจัดการ i-MyWork </span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+	</ui:define>
+
+</ui:composition>
+

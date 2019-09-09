@@ -1,0 +1,18 @@
+<pretty-config xmlns="http://ocpsoft.org/schema/rewrite-config-prettyfaces" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xsi:schemaLocation="http://ocpsoft.org/schema/rewrite-config-prettyfaces
+                      http://ocpsoft.org/xml/ns/prettyfaces/rewrite-config-prettyfaces.xsd">
+
+	<url-mapping id="reportRfr01001">
+		<pattern value="/scr/report/reportRfr01001" />
+		<view-id value="/scr/report/reportPage.xhtml?reportId=rfr01001" />
+	</url-mapping>
+	<url-mapping id="reportRfr01002">
+		<pattern value="/scr/report/reportRfr01002" />
+		<view-id value="/scr/report/reportPage.xhtml?reportId=rfr01002" />
+	</url-mapping>
+	<url-mapping id="reportRfr01003">
+		<pattern value="/scr/report/reportRfr01003" />
+		<view-id value="/scr/report/reportPage.xhtml?reportId=rfr01003" />
+	</url-mapping>
+</pretty-config>

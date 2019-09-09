@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	template="/templates/template.xhtml">
+	<ui:define name="contentMain">
+
+		<h:head>
+
+		</h:head>
+		<h:body>
+
+			<div id="page-content" class="header-static footer-fixed">
+				<!--  Slider  -->
+				<div id="flexslider" class="fullpage-wrap small extrasmall">
+					<ul class="slides">
+						<li style="background-image: url(assets/img/contact.jpg)">
+							<div class="text text-center">
+								<h1 class="white margin-bottom-small">Registration</h1>
+								<p class="heading white">ลงทะเบียนเพื่อเข้าใช้งาน i-MyWork
+									บริหารจัดการบริการที่คุณต้องการ</p>
+							</div>
+							<div class="gradient dark"></div>
+						</li>
+					</ul>
+				</div>
+
+				<!--  END Slider  -->
+				<div id="home-wrap" class="content-section fullpage-wrap">
+					<ui:include src="/includes/support.xhtml" />
+					<!-- Services -->
+
+					<!-- END Services -->
+					<div class="row margin-leftright-null">
+						<div class="col-md-6 padding-leftright-null">
+							<div class="text">
+								<h2 class="margin-bottom-null title left">i-MyWork</h2>
+								<div class="padding-onlytop-md">
+									<h3 class="grey big margin-bottom-small">ลงทะเบียน
+										สร้างบัญชี</h3>
+									<p class="heading left margin-bottom">ลงทะเบียนเพื่อสร้างบัญชีเข้าใช้งาน
+										i-MyWork เพื่อบริหารจัดการบริการที่คุณต้องการได้ ที่นี่</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 padding-leftright-null">
+							<div class="text padding-md-top-null">
+								<h:form  id="contact-form"
+									styleClass="padding-md padding-md-topbottom-null">
+									<rich:validator event="change">
+
+										<div class="row" style="margin-bottom: 20px;">
+											<div class="col-md-6">
+												<h:inputText label="email" id="email"
+													value="#{accountAction.email}" required="true"
+													styleClass="form-field" a:placeholder="อีเมล"
+													requiredMessage="* กรุณาใส่อีเมล">
+													<f:ajax event="keyup" />
+												</h:inputText>
+												<rich:message for="email" ajaxRendered="true" />
+											</div>
+											<div class="col-md-6">
+												<h:inputSecret label="password" id="password"
+													value="#{accountAction.password}" required="true"
+													styleClass="form-field" a:placeholder="รหัสผ่าน"
+													requiredMessage="* กรุณาใส่รหัสผ่าน">
+													<f:ajax event="keyup" />
+												</h:inputSecret>
+												<rich:message for="password" ajaxRendered="true" />
+											</div>
+											
+										</div>
+										<div class="row" style="margin-bottom: 20px;">
+											
+											<div class="col-md-6">
+												<h:inputText label="firstName" id="firstName"
+													value="#{accountAction.firstName}" required="true"
+													styleClass="form-field" a:placeholder="ชื่อ"
+													requiredMessage="* กรุณาใส่ชื่อ">
+													<f:ajax event="keyup" />
+												</h:inputText>
+												<rich:message for="firstName" ajaxRendered="true" />
+											</div>
+											<div class="col-md-6">
+												<h:inputText label="lastName" id="lastName"
+													value="#{accountAction.lastName}" required="true"
+													styleClass="form-field" a:placeholder="นามสกุล"
+													requiredMessage="* กรุณาใส่นามสกุล">
+													<f:ajax event="keyup" />
+												</h:inputText>
+												<rich:message for="lastName" ajaxRendered="true" />
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12">
+												<div style="float: left; margin-right: 5px;">
+													
+													<h:selectBooleanCheckbox styleClass="form-field" id="confirm" name="confirm" 
+													value="#{accountAction.confirmRegister}" 
+													valueChangeListener="#{accountAction.actionConfirmRegister}" >
+													 <f:ajax render="contact-form" />
+													</h:selectBooleanCheckbox>
+												</div>
+												<div style="margin-top: 10px;">
+													ยอมรับ <a href="terms-of-use.xhtml" target="_Bank">
+														เงื่อนไขการใช้บริการ</a> และ <a href="privacy-statement.xhtml"
+														target="_Bank">นโยบายความเป็นส่วนตัว</a>
+												</div>
+											</div>
+										</div>
+									</rich:validator>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="submit-area padding-onlytop-sm">
+												<rich:notifyMessage stayTime="3000" nonblocking="true" />
+												<a4j:commandButton styleClass="btn btn-primary btn-lg"
+												 style="margin-right: 0px;margin-left: 0px;margin-bottom: 0px;"
+												 action="#{accountAction.actionRegister}"
+												 disabled="#{accountAction.disabledBTRegister}"
+												 id="BTRegister" status="waitLargeStatus"
+												 render="contact-form" value="ลงทะเบียนสมัครใช้บริการ">
+													
+											</a4j:commandButton>
+											</div>
+										</div>
+									</div>
+								</h:form>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</h:body>
+
+	</ui:define>
+</ui:composition>
+

@@ -1,0 +1,91 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich">
+
+	<h:head>
+
+</h:head>
+<h:body>
+ <!--  Header & Menu  -->
+            <header id="header" class="fixed transparent">
+                <nav class="navbar navbar-default white">
+                    <!--  Header Logo  -->
+                    <div id="logo">
+                        <a class="navbar-brand" href="index.jsf">
+                            <img src="#{request.contextPath}/resources/web/assets/img/logo.png" class="normal" alt="logo"/>
+                            <img src="#{request.contextPath}/resources/web/assets/img/logo@2x.png" class="retina" alt="logo"/>
+                            <img src="#{request.contextPath}/resources/web/assets/img/logo_white.png" class="normal white-logo" alt="logo"/>
+                            <img src="#{request.contextPath}/resources/web/assets/img/logo_white@2x.png" class="retina white-logo" alt="logo"/>
+                        </a>
+                    </div>
+                    <!--  END Header Logo  -->
+                    <!--  Classic menu, responsive menu classic  -->
+                    <div id="menu-classic">
+                        <div class="menu-holder">
+                            <ul>
+                                <li class="submenu megasubmenu">
+                                    <a href="javascript:void(0)" class="active-item">สินค้าและบริการ</a>
+                                    <!-- mega-lg 4 columns mega-md 3/2 columns -->
+                                    <ul class="sub-menu mega-sub-menu mega-lg mega-header">
+                                        <li>
+                                            <div class="col-lg-4 col-md-4 main-header">
+                                                <h2 class="margin-bottom-null title left grey">i-Firsttech.co.th</h2>
+                                                <h3 class="grey padding-onlytop-md margin-bottom-extrasmall">i-MyWork</h3>
+                                                <p>งานของคุณคืองานของเรา ให้เราได้ช่วยดูแลธุรกิจของคุณและก้าวไปด้วยกัน</p>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4">
+                                                <ul>
+                                                    <h6 class="heading white margin-bottom-extrasmall">Business Services &amp; Products</h6>
+                                                    <li><a href="our-services.jsf">Slip Online</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4">
+                                                <ul>
+                                                    <h6 class="heading white margin-bottom-extrasmall">Account &amp; Register</h6>
+                                                    <li><a href="/Slip/accounts/index.jsf">My Account</a></li>
+                                                    <li><a href="register.jsf">Register</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <!-- END mega-lg 4 columns mega-md 3/2 columns -->
+                                </li>
+                               
+                                <li class="submenu megasubmenu">
+                                    <a href="privacy.jsf">การใช้งานและความปลอดภัย</a>
+                                    <!-- mega-lg 4 columns  mega-md 3/2 columns -->
+                                    
+                                </li>
+                                <li>
+                                    <a href="about.jsf">เกี่ยวกับเรา</a>
+                                </li>
+                                <li class="submenu">
+                                    <a href="contact.jsf">ติดต่อเรา</a>
+                                  
+                                </li>
+                                <!-- Search Icon -->
+                                <li class="search">
+                                    <i class="fa fa-user"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--  END Classic menu, responsive menu classic  -->
+                    <!--  Button for Responsive Menu Classic  -->
+                    <div id="menu-responsive-classic">
+                        <div class="menu-button">
+                            <span class="bar bar-1"></span>
+                            <span class="bar bar-2"></span>
+                            <span class="bar bar-3"></span>
+                        </div>
+                    </div>
+                    <!--  END Button for Responsive Menu Classic  -->
+                   
+                </nav>
+            </header>
+            <!--  END Header & Menu  -->
+</h:body>
+</ui:composition>

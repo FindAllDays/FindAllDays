@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	template="/templates/template.xhtml">
+	<ui:define name="contentMain">
+
+		<h:head>
+
+		</h:head>
+		<h:body>
+
+			<div id="page-content" class="header-static footer-fixed">
+                <!--  Slider  -->
+                <div id="flexslider" class="fullpage-wrap small extrasmall">
+                    <ul class="slides">
+                        <li style="background-image:url(assets/img/contact.jpg)">
+                            <div class="text text-center">
+                                <h1 class="white margin-bottom-small">About Us</h1>
+                                <p class="heading white">เกี่ยวกับเรา</p>
+                            </div>
+                            <div class="gradient dark"></div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!--  END Slider  -->
+                <div id="home-wrap" class="content-section fullpage-wrap">
+					<ui:include src="/includes/support.xhtml" />
+                    <!-- Services -->
+                    
+                    <!-- END Services -->
+                    <div class="row margin-leftright-null">
+					<div class="col-lg-8 padding-leftright-null">
+						<div data-responsive="parent-height" data-responsive-id="adv" class="text">
+							<h2 class="margin-bottom-null title left">i-FirstTech</h2>
+							<div class="padding-onlytop-md">
+								<h3 class="grey big margin-bottom-small">
+									We lovers,<br></br> excellent developers
+								</h3>
+								<p class="heading left margin-bottom">
+									i-FirstTech Co.,Ltd ก่อตั้งขึ้นบนพื้นฐานแนวความคิดที่ว่า "การพัฒนาซอฟต์แวร์หรือบริการต่างๆ เราต้องเป็นที่หนึ่งเสมอ" เพื่อให้สอดคล้องกับแนวความคิด เราจึงดูแลใส่ใจทุกชิ้นงานที่ได้สร้างสรรค์ หรือคิดค้นขึ้นมา เพื่อตอบสนองต่อความต้องการของลูกค้าได้อย่างเต็มประสิทธิภาพ</p>
+								<p></p>
+								<p>i-MyWork เป็นบริการของเราที่ให้นโยบายว่า "งานของคุณ คืองานของเรา" เพื่อนำเสนอบริการดีๆแก่คุณ และช่วยให้ธุรกิจของคุณมีประสิทธิภาพมากยิ่งขึ้น </p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 padding-leftright-null">
+						<div data-responsive="child-height" data-responsive-id="adv" class="text height-auto-lg vertical-align-outer" style="height: 468px;">
+							<div class="color-background box-shadow vertical-align-inner text responsive-padding-sm padding-md-topbottom-null">
+								<blockquote class="heading white" style="padding-left: 0px;">คำนึงถึงความคุ้มค่าของซอฟต์แวร์ที่ได้จากการพัฒนาสำหรับหน่วยงาน องค์กร บริษัท หรือบุคคล อื่นๆ เพื่อให้ได้ประโยชน์สูงสุดแก่ลูกค้า เราจึงใส่ใจทุกขั้นตอนการพัฒนา</blockquote>
+							</div>
+						</div>
+					</div>
+				</div>
+                    
+                </div>
+            </div>
+			
+		</h:body>
+
+	</ui:define>
+</ui:composition>
+

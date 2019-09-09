@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	template="/templates/template.xhtml">
+	<ui:define name="contentMain">
+
+		<h:head>
+
+		</h:head>
+		<h:body>
+
+			<div id="page-content" class="header-static footer-fixed">
+                <!--  Slider  -->
+                <div id="flexslider" class="fullpage-wrap small extrasmall">
+                    <ul class="slides">
+                        <li style="background-image:url(assets/img/contact.jpg)">
+                            <div class="text text-center">
+                                <h1 class="white margin-bottom-small">Our Services &amp; Pricing</h1>
+                                <p class="heading white">บริการและราคาของเรา ระบบ Slip Online </p>
+                            </div>
+                            <div class="gradient dark"></div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!--  END Slider  -->
+               	<div id="home-wrap" class="content-section fullpage-wrap">
+					<ui:include src="/includes/support.xhtml" />
+                    <!-- Services -->
+                    
+                    <!-- END Services -->
+                    <div class="row margin-leftright-null">
+                    
+                        <div class="row margin-leftright-null">
+                            <div class="col-md-4 padding-leftright-null padding-onlytop-md">
+                                <div class="text text-right text-md-left padding-md-topbottom-null">
+                                    <i class="fa fa-user-o service color"></i>
+                                    <h6 class="heading black margin-bottom-extrasmall">จัดการข้อมูลผู้ใช้งาน</h6>
+                                    <p class="margin-md-bottom-null">จัดการข้อมูลผู้ใช้งาน กำหนดสิทธิ์การเข้าถึงข้อมูลของผู้ใช้งานได้</p>
+                                </div>
+                                <div class="text text-right text-md-left">
+                                    <i class="fa fa-bitcoin service color"></i>
+                                    <h6 class="heading black margin-bottom-extrasmall">จัดการข้อมูลการเงิน</h6>
+                                    <p class="margin-md-bottom-null">จัดการข้อมูลการเงินสำหรับพนักงาน สามารถนำเข้าข้อมูล ส่งออกข้อมูลผ่านระบบได้</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 padding-leftright-null padding-md">
+                                <img class="center img-responsive" src="assets/img/service6.png" alt=""/>
+                            </div>
+                            <div class="col-md-4 padding-leftright-null padding-onlytop-md">
+                                <div class="text padding-md-topbottom-null">
+                                    <i class="fa fa-file-text-o service color"></i>
+                                    <h6 class="heading black margin-bottom-extrasmall">เลือกรูปแบบสลิปที่ต้องการ</h6>
+                                    <p class="margin-md-bottom-null">เลือกรูปแบบการแสดงผลของสลิปเงินเดือนได้ พร้อมทั้ง กำหนดรูปแบบที่ต้องการได้</p>
+                                </div>
+                                <div class="text">
+                                    <i class="icon ion-ios-lightbulb-outline service color"></i>
+                                    <h6 class="heading black margin-bottom-extrasmall">รูปแบบการแสดงผล</h6>
+                                    <p class="margin-md-bottom-null">รองรับการใช้งานผ่านอุปกรณ์พกพาได้ทุกชนิด ได้ทุกที่ ทุกเวลา</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 padding-leftright-null">
+                            <div class="text" align="center">
+                           
+                                <div class="padding-onlytop-md">
+                                    <h3 class="grey big margin-bottom-small">Slip Online Packages</h3>
+                                 </div>
+                            </div>
+                        </div>
+                        <div class="row no-margin grey-background">
+                        <section id="pricing">
+                            <div class="col-sm-4 price padding-leftright-null">
+                                <div class="price-title">Basic</div>
+                                <div class="price-number">Free</div>
+                                <ul class="style">
+                                    <li>จำนวนผู้ใช้งาน 10 ผู้ใช้งาน</li>
+                                    <li>สลิปเงินเดือน 1 รูปแบบ</li>
+                                </ul>
+                                <a href="#" class="btn-alt small active">ลงทะเบียนใช้งาน</a>
+                            </div>
+                            <div class="col-sm-4 price active padding-leftright-null">
+                                <div class="price-title">Advanced</div>
+                                <div class="price-number">90</div>
+                                <ul class="style">
+                                    <li>จำนวนผู้ใช้งาน 30 ผู้ใช้งาน</li>
+                                    <li>สลิปเงินเดือน 2 รูปแบบ</li>
+                                </ul>
+                                <a href="#" class="btn-alt small active shadow">ลงทะเบียนใช้งาน</a>
+                            </div>
+                            <div class="col-sm-4 price padding-leftright-null">
+                                <div class="price-title">Premium</div>
+                                <div class="price-number">150</div>
+                                <ul class="style">
+                                    <li>จำนวนผู้ใช้งาน ไม่จำกัดผู้ใช้งาน</li>
+                                    <li>สลิปเงินเดือนไม่จำกัดรูปแบบ</li>
+                                </ul>
+                                <a href="#" class="btn-alt small active shadow">ลงทะเบียนใช้งาน</a>
+                            </div>
+                        </section>
+                    </div>
+                    
+                </div>
+            </div>
+			
+		</h:body>
+
+	</ui:define>
+</ui:composition>
+
