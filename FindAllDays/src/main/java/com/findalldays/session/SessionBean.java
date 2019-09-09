@@ -24,6 +24,7 @@ public class SessionBean implements Serializable {
 
 	private String sessionId;
 	//Test
+	private String AAA;
 	
 	
 	@PostConstruct
