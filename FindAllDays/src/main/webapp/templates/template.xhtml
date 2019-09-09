@@ -1,0 +1,28 @@
+<!--
+    i-firsttech Co.,ltd.
+-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+	<h:head>
+		<title></title>
+		<ui:include src="/includes/css.xhtml" />
+	</h:head>
+	<h:body styleClass="front-page">
+		<div class="body-wrapper">
+			<ui:include src="/includes/header.xhtml" />
+
+			<!-- Main Content -->
+			<ui:insert name="contentMain">
+             [Template content will be inserted here]
+        	</ui:insert>
+			<ui:include src="/includes/footer.xhtml" />
+		</div>
+		<ui:include src="/includes/js.xhtml" />
+
+	</h:body>
+</ui:composition>

@@ -1,0 +1,125 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+
+	<h:head>
+
+</h:head>
+<h:body>
+ <header class="header light">
+        <!-- Start Logo -->
+        <div class="logo">
+          <a href="#" class="logo-color-bg">
+            <img alt="" src="#{request.contextPath}/resources/assets/images/logo.png"/>
+          </a>
+        </div>
+        <!-- End Logo -->
+        <!-- Start User Buttons -->
+        <div class="user-buttons">
+          <a href="#" class="user-login"></a>
+          <a href="#" class="add-listing">Add Listing</a>
+        </div>
+        <!-- End User Buttons -->
+        <!-- Start Navbar -->
+        <div class="navbar navbar-inverse" role="navigation" id="slide-nav">
+          <div class="container">
+            <div id="slidemenu">
+              <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                  <a href="#" >หน้าแรก</a>
+                
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">การเข้าใช้งาน<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">ลงชื่อเข้าใช้งาน/ลงทะเบียนสมัครสมาชิก</a></li>
+                    <li><a href="#">ลืมรหัสการใช้งาน</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" >เกี่ยวกับเรา</a>
+                 
+                </li>
+                
+                <li class="dropdown">
+                  <a href="#" >ติดต่อเรา</a>
+                  
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- End Navbar -->
+      </header>
+      <!-- End header (topbar) -->
+      <!-- Start Login/Register Popup -->
+      <div class="login-popup container hero-header">
+        <div class="row">
+    			<div class="col-sm-12 text-center">
+    				<div class="panel panel-form">
+    					<div class="panel-heading">
+    						<div class="row">
+    							<div class="col-xs-6">
+    								<a href="#" class="active" id="login-form-link">ลงชื่อเข้าใช้งาน</a>
+    							</div>
+    							<div class="col-xs-6">
+    								<a href="#" id="register-form-link">ลงทะเบียนสมาชิก</a>
+    							</div>
+    						</div>
+    						<hr></hr>
+    					</div>
+    					<div class="panel-body">
+    						<div class="row">
+    							<div class="col-lg-12">
+    								<form id="login-form" action="#" method="post">
+    									<div class="form-group">
+    										<input type="text" name="username" id="login-username" tabindex="1" class="form-control" placeholder="Username" value=""/>
+    									</div>
+    									<div class="form-group">
+    										<input type="password" name="password" id="login-password" tabindex="2" class="form-control" placeholder="Password"/>
+    									</div>
+    									<div class="form-group text-center">
+    										<input type="checkbox" tabindex="3" class="" name="remember" id="remember"/>
+    										<label for="remember"> Remember Me</label>
+    									</div>
+    									<div class="form-group">
+    										<input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-submit" value="Log In"/>
+    									</div>
+    									<div class="form-group">
+    										<div class="row">
+    											<div class="col-lg-12">
+    												<div class="text-center">
+    													<a href="#" tabindex="5" class="login-forgot-password">Forgot Password?</a>
+    												</div>
+    											</div>
+    										</div>
+    									</div>
+    								</form>
+    								<form id="register-form" action="#" method="post">
+    									<div class="form-group">
+    										<input type="text" name="username" id="register-username" tabindex="1" class="form-control" placeholder="Username" value=""/>
+    									</div>
+    									<div class="form-group">
+    										<input type="email" name="email" id="register-email" tabindex="1" class="form-control" placeholder="Email Address" value=""/>
+    									</div>
+    									<div class="form-group">
+    										<input type="password" name="password" id="register-password" tabindex="2" class="form-control" placeholder="Password"/>
+    									</div>
+    									<div class="form-group">
+    										<input type="password" name="confirm-password" id="register-confirm-password" tabindex="2" class="form-control" placeholder="Confirm Password"/>
+    									</div>
+    									<div class="form-group">
+    										<input type="submit" name="register-submit" id="register-submit" tabindex="4" class="form-control btn btn-submit" value="Register Now"/>
+    									</div>
+    								</form>
+    							</div>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+      </div>
+</h:body>
+</ui:composition>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pretty-config xmlns="http://ocpsoft.org/schema/rewrite-config-prettyfaces" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xsi:schemaLocation="http://ocpsoft.org/xml/ns/prettyfaces/rewrite-config-prettyfaces.xsd">
+
+	<url-mapping id="index">
+		<pattern value="/index" />
+		<view-id value="/pages/index.jsf" />		
+	</url-mapping>
+	
+	<url-mapping id="carts">
+		<pattern value="/carts" />
+		<view-id value="/pages/carts.jsf" />		
+	</url-mapping>
+	
+	<url-mapping id="forgot-password">
+		<pattern value="/forgot-password" />
+		<view-id value="/pages/forgot-password.jsf" />		
+	</url-mapping>
+	
+	<!-- Renew -->
+	<url-mapping id="info">
+		<pattern value="/info" />
+		<view-id value="/pages/info.jsf" />		
+	</url-mapping>	
+	
+	<url-mapping id="list-product">
+		<pattern value="/list-product" />
+		<view-id value="/pages/list-product.jsf" />		
+	</url-mapping>	
+	
+	<!-- Reissue -->
+	<url-mapping id="list-shop">
+		<pattern value="/list-shop" />
+		<view-id value="/pages/list-shop.jsf" />		
+	</url-mapping>	
+	
+	<url-mapping id="news-view">
+		<pattern value="/news-view" />
+		<view-id value="/pages/news-view.jsf" />		
+	</url-mapping>					
+	
+	
+<!-- Report -->
+	<url-mapping id="news">
+		<pattern value="/news" />
+		<view-id value="/pages/news.jsf" />		
+	</url-mapping>
+	
+	<url-mapping id="order-detail">
+		<pattern value="/order-detail" />
+		<view-id value="/pages/order-detail.jsf" />		
+	</url-mapping>
+	
+<!-- Setting -->
+	<url-mapping id="order-member">
+		<pattern value="/order-member" />
+		<view-id value="/pages/orderMember.jsf" />		
+	</url-mapping>
+	
+	<url-mapping id="order-view">
+		<pattern value="/order-view" />
+		<view-id value="/pages/orderView.jsf" />		
+	</url-mapping>
+	
+	<url-mapping id="payment">
+		<pattern value="/payment" />
+		<view-id value="/pages/payment.jsf" />		
+	</url-mapping>
+	
+	<url-mapping id="product-view">
+		<pattern value="/product-view" />
+		<view-id value="/pages/product-view.jsf" />		
+	</url-mapping>
+	
+	
+	
+	<url-mapping id="register">
+		<pattern value="/register" />
+		<view-id value="/pages/register.jsf" />		
+	</url-mapping>
+	
+	<url-mapping id="shop">
+		<pattern value="/shop" />
+		<view-id value="/pages/shop.jsf" />		
+	</url-mapping>				
+	
+	<!-- permission denied -->
+	<url-mapping id="/profile">
+		<pattern value="/profile" />
+		<view-id value="/pages/profile.jsf" />		
+	</url-mapping>
+	
+	<url-mapping id="home">
+		<pattern value="/home" />
+		<view-id value="/pages/index.jsf" />		
+	</url-mapping>
+	
+	<url-mapping id="error-404">
+		<pattern value="/error-404" />
+		<view-id value="/pages/error-404.jsf" />		
+	</url-mapping>			
+
+</pretty-config>

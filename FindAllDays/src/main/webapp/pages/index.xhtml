@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui" template="/templates/template.xhtml">
+	<ui:define name="contentMain">
+
+		<h:head>
+
+		</h:head>
+		<h:body>
+			<div class="container-fluid hero-header dark">
+				<!-- Start Header Centralizer -->
+				<div class="header-centralizer">
+					<div class="content-centralized">
+						<!-- Start Hero Search -->
+						<div class="hero-search">
+							<form>
+								<fieldset>
+									<input type="text" class="form-control"
+										data-placeholder="Explore and Enjoy..." /><span
+										class="typingEffect"
+										data-title="What Do You Need Today//วันนี้คุณต้องการอะไร ? ร่วมค้นหาไปกับเรา //Find All Days."></span>
+								</fieldset>
+								<!-- Start Search Cities -->
+								<div class="search-cities-toggle"></div>
+								<div class="search-cities">
+									<div class="cities-list">
+										<a href="#"
+											style="background-image: url('assets/images/cities/thumbs/1.jpg')"
+											data-city-id="1"><span>Boston</span></a> <a href="#"
+											style="background-image: url('assets/images/cities/thumbs/2.jpg')"
+											data-city-id="2"><span>Chicago</span></a> <a href="#"
+											style="background-image: url('assets/images/cities/thumbs/3.jpg')"
+											data-city-id="0" class="current"><span>Miami</span></a> <a
+											href="#"
+											style="background-image: url('assets/images/cities/thumbs/4.jpg')"
+											data-city-id="3"><span>New Orleans</span></a> <a href="#"
+											style="background-image: url('assets/images/cities/thumbs/5.jpg')"
+											data-city-id="4" class="go-more-cities"><span>More
+												Cities</span></a> <input class="chosen-city" type="hidden" name="city"
+											value="0" />
+									</div>
+								</div>
+								<!-- End Search Cities -->
+								<div class="search-submit">
+									<input type="submit" value=" " /><i class="hero-search-icon"></i>
+								</div>
+							</form>
+						</div>
+						<!-- End Hero Search -->
+						<!-- Start Search Categories -->
+						<div class="search-categories">
+							<div class="categories">
+								<a class="icon-platter child" href="#">Restaurant</a> <a
+									class="icon-teacup child" href="#">Café</a> <a
+									class="icon-moon" href="#">Nightlife</a> <a
+									class="icon-landscape" href="#">Outdoor</a> <a
+									class="icon-home" href="#">Lodging</a> <a
+									class="icon-car child" href="#">Car Dealer</a> <a
+									class="icon-hanger child" href="#">Clothing</a> <a
+									class="icon-bench-press child" href="#">Gim</a> <a
+									class="icon-saw child" href="#">Home Service</a> <a
+									class="icon-laundry child" href="#">Laundry</a> <a
+									class="icon-bag-dollar child" href="#">Bank</a> <a
+									class="icon-palette child" href="#">Art Gallery</a> <a
+									class="icon-library child" href="#">Bookstore</a> <a
+									class="icon-chair child" href="#">Furniture</a> <a
+									class="icon-receipt" href="#">Coupons</a> <a class="icon-lan2"
+									href="#">Online Order</a> <a class="icon-paw" href="#">Pets
+									Friendly</a> <a class="icon-wheelchair" href="#">Accessible</a> <a
+									class="icon-wifi" href="#">Wi-Fi</a> <a class="icon-city"
+									href="#">More Options</a>
+							</div>
+						</div>
+						<!-- End Search Categories -->
+
+					</div>
+				</div>
+			</div>
+			<!-- Start Front Categories -->
+			<div class="container-fluid front-categories" style="margin-bottom: 40px;">
+				<div class="row row-title">
+					<h1>What Do You Need Today?</h1>
+					<h4>วันนี้คุณต้องการอะไร ? ร่วมค้นหาไปกับเรา Find All Days.</h4>
+				</div>
+				<div class="row cat-itens">
+					<div class="cat-item">
+						<div class="cat-overlay"></div>
+						<div class="cat-image"
+							style="background-image: url('assets/images/categories/1.jpg')"></div>
+						<div class="cat-icon icon-bus"></div>
+						<div class="cat-counter">34</div>
+						<a href="#">
+							<div class="cat-text">Tour</div>
+						</a>
+					</div>
+					<div class="cat-item">
+						<div class="cat-overlay"></div>
+						<div class="cat-image"
+							style="background-image: url('assets/images/categories/2.jpg')"></div>
+						<div class="cat-icon icon-dinner"></div>
+						<div class="cat-counter">7</div>
+						<a href="#">
+							<div class="cat-text">Eat</div>
+						</a>
+					</div>
+					<div class="cat-item">
+						<div class="cat-overlay"></div>
+						<div class="cat-image"
+							style="background-image: url('assets/images/categories/3.jpg')"></div>
+						<div class="cat-icon icon-bed"></div>
+						<div class="cat-counter">47</div>
+						<a href="#">
+							<div class="cat-text">Relax</div>
+						</a>
+					</div>
+					<div class="cat-item">
+						<div class="cat-overlay"></div>
+						<div class="cat-image"
+							style="background-image: url('assets/images/categories/4.jpg')"></div>
+						<div class="cat-icon icon-graduation-hat"></div>
+						<div class="cat-counter">11</div>
+						<a href="#">
+							<div class="cat-text">Study</div>
+						</a>
+					</div>
+					<div class="cat-item">
+						<div class="cat-overlay"></div>
+						<div class="cat-image"
+							style="background-image: url('assets/images/categories/5.jpg')"></div>
+						<div class="cat-icon icon-heart-pulse"></div>
+						<div class="cat-counter">61</div>
+						<a href="#">
+							<div class="cat-text">Care</div>
+						</a>
+					</div>
+					<div class="cat-item">
+						<div class="cat-overlay"></div>
+						<div class="cat-image"
+							style="background-image: url('assets/images/categories/6.jpg')"></div>
+						<div class="cat-icon icon-bag"></div>
+						<div class="cat-counter">29</div>
+						<a href="#">
+							<div class="cat-text">Buy</div>
+						</a>
+					</div>
+					<div class="cat-item">
+						<div class="cat-overlay"></div>
+						<div class="cat-image"
+							style="background-image: url('assets/images/categories/7.jpg')"></div>
+						<div class="cat-icon icon-button"></div>
+						<div class="cat-counter">123</div>
+						<a href="#">
+							<div class="cat-text">Decorate</div>
+						</a>
+					</div>
+					<div class="cat-item">
+						<div class="cat-overlay"></div>
+						<div class="cat-image"
+							style="background-image: url('assets/images/categories/8.jpg')"></div>
+						<div class="cat-icon icon-haircut"></div>
+						<div class="cat-counter">53</div>
+						<a href="#">
+							<div class="cat-text">Charm</div>
+						</a>
+					</div>
+					<div class="cat-item">
+						<div class="cat-overlay"></div>
+						<div class="cat-image"
+							style="background-image: url('assets/images/categories/9.jpg')"></div>
+						<div class="cat-icon icon-trumpet"></div>
+						<div class="cat-counter">166</div>
+						<a href="#">
+							<div class="cat-text">Party</div>
+						</a>
+					</div>
+					<div class="cat-item">
+						<div class="cat-overlay"></div>
+						<div class="cat-image"
+							style="background-image: url('assets/images/categories/10.jpg')"></div>
+						<div class="cat-icon icon-city"></div>
+						<div class="cat-counter">92</div>
+						<a href="#">
+							<div class="cat-text">Other</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<!-- End Front Categories -->
+		</h:body>
+
+	</ui:define>
+</ui:composition>
+
